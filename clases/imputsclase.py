@@ -10,3 +10,4 @@ nombre = input(PREGUNTA_NOMBRE)
 edad = int (input (PREGUNDAD_EDAS))
 estatura = float (input(PREGUNDAD_ESTATURA))
 print(MENSAJE_SALUDO,nombre)
+
