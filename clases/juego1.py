@@ -1,6 +1,7 @@
 #-----Entradas-----#
-MENSAJE_SALUDAR = """Bienvenido 
-                        a este programa, 
+MENSAJE_SALUDAR = """
+            Bienvenido 
+                    a este programa, 
                             !!!jueguemos!!"""
 PREGUNTA_NUMERO = """
         En este juego debes asetar un numero
@@ -24,7 +25,7 @@ while(numeroOculto != numeroIngresado and vidas > 1) :
     vidas -=1
 
 if(vidas >0):
-    print(MENSAJE_DESPEDIDA)
+    print(MENSAJE_GANASTE)
     print(vidas)
 else:
     print(MENSAJE_PERDISTE, "El numero era el", numeroOculto)
