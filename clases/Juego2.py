@@ -22,10 +22,11 @@ PREGUNTA_DIFICUTAD = """
 """
 PREGUNTA_FALIDA = " Aaaaah! Fallaste... ingresa otro numero: "
 MENSAJE_GANASTE = "Felicidades ganaste !!"
-MENSAJE_PERDISTE = "perdiste D: "vuelve" a intentarlo!!"
+MENSAJE_PERDISTE = "perdiste D: ""vuelve"" a intentarlo!!"
 #-----entrada al codigo-----#
-numeroOculto = random.randint(1,10)
-numeroOcultoDos = random.randint(1,10)
+import random 
+numeroOculto = random.randint (1,10)
+numeroOcultoDos = random.randint (1,10)
 vidas = None
 
 
@@ -45,34 +46,30 @@ else:
     print ("Modo dificil activado, sssss mucho cuidado")
     vidas = 2
 
-numeroIgresado = int(input(PREGUNTA_NUMERO))
-while (numeroIgresado != numeroOculto and vidas>1):
-    if(numeroIngresado> numeroOculto):
+numeroIngresado = int(input(PREGUNTA_NUMERO))
+while (numeroIngresado != numeroOculto and vidas>1):
+    if( numeroIngresado > numeroOculto):
         print(MENSAJE_CALIENTE)
     else:
         print(MENSAJE_FRIO)
     vidas -=1
     print(f"te quedan {vidas} vidas")
-    numeroIgresado =int(input(PREGUNTA_FALIDA))
-if(vidas >= 0 and numeroIgresado == numeroOculto):
+    numeroIngresado = int(input(PREGUNTA_FALIDA))
+if(vidas >= 0 and numeroIngresado == numeroOculto):
     print (MENSAJE_SEGUNDO_NIVEL)
-    numeroIgresado = int(input(PREGUNTA_NUMERO))
-    while (numeroIgresado !=  numeroOcultoDos and vidas>1):
-        if (numeroIgresado > numeroOcultoDos):
+    numeroIngresado = int(input(PREGUNTA_NUMERO))
+    while (numeroIngresado !=  numeroOcultoDos and vidas>1):
+        if (numeroIngresado > numeroOcultoDos):
             print(MENSAJE_CALIENTE)
         else:
             print(MENSAJE_FRIO)
         vidas -=1
         print (f"te quedan {vidas} vidas")
-        numeroIgresado= int(input(PREGUNTA_FALIDA))
+        numeroIngresado= int(input(PREGUNTA_FALIDA))
 
     
-if(vidas >= 0 and numeroIgresado == numeroOcultoDos):
+if(vidas >= 0 and numeroIngresado == numeroOcultoDos):
         print(MENSAJE_GANASTE)
 
 else:
-    print(MENSAJE_PERDISTE, 
-                            "el numero uno era el ", 
-                            numeroOculto
-                            "el numero dos era el",
-                            numeroOcultoDos)
+    print(MENSAJE_PERDISTE,"el numero uno era el ", numeroOculto, "el numero dos era el",numeroOcultoDos)
