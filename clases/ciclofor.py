@@ -1,12 +1,12 @@
 
-for iteracion in range (10):
-    print(iteracion)
+for elemento in range (10):
+    print(elemento)
 print("#"*60)
-for iteracion in range (10):
-    print(iteracion+1)
+for elemento in range (10):
+    print(elemento+1)
 print("#"*60)
-for iteracion in range (1,11):
-    print(iteracion)
+for elemento in range (1,11):
+    print(elemento)
 print("#"*60)
 
 for iteracion in range (1,11,2):
