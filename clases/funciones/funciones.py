@@ -1,5 +1,9 @@
 #-----sumar dos numero-----#
 def sumar (a = 0,b=0):
+    """
+        devuelve la suma de dos numeros a y b 
+        por defecto a vale 0 al igual que b
+    """
     suma = a + b
     return suma
 
