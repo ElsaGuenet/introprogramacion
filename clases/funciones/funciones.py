@@ -1,36 +1,24 @@
-#----funciones sin entrada----#
-print("#"*60)
-print("hola")
-print("Como estas ?")
-print("#"*60)
-def lineDesign():
-    print("#"*60)
-lineDesign()
-print("hola")
-print("como estas ?")
-lineDesign()
-#----funciones con una entrada----#
-def lineDesignC(cantidad=2):
-    print("#"*cantidad)
-lineDesignC(12)
-lineDesignC()
+#-----sumar dos numero-----#
+def sumar (a = 0,b=0):
+    suma = a + b
+    return suma
 
-#---funcion suma----#
-def sumar (valor1=0, valor2=0):
-    return valor1 + valor2
-def restar (valor1=0, valor2=0):
-    return valor1 - valor2
-def multiplicar (valor1=0, valor2=1):
-    return valor1 * valor2
-def dividir (valor1=0, valor2=1):
-    return valor1 / valor2
-print(sumar(2,2))
-print(sumar())
-#----funciones que utilizan otras----#
-def calculadora (accion, valor1, valor2):
-    print(accion(valor1,valor2))
-lineDesignC(30)
-calculadora(sumar,1,1)
-calculadora(dividir,1,2)
-calculadora(multiplicar,73,77)
-calculadora(restar,73,77)
+#-----restar dos numero-----#
+def restar (a = 0,b=0):
+    resta = a - b
+    return resta
+#-----multiplicar dos numero-----#
+def multiplicar (a = 0,b=0):
+    multiplica = a * b
+    return multiplica
+#-----dividir dos numero-----#
+def dividir (a = 0,b=1):
+    dividi = a / b
+    return dividi
+#-----potenciar dos numero-----#
+def potenciar (base = 0,exponente =1):
+    potencia = base**exponente
+    return potencia
+#-----funciones dependientes de otras-----#
+def calcular(operacion, numeroA, numeroB):
+    print(operacion(numeroA,numeroB))
