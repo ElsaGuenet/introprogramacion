@@ -1,0 +1,4 @@
+import operaciones_matematicas
+import operaciones_strings 
+
+operaciones_strings.lineDesignC(4)
