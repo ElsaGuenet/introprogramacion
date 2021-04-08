@@ -1,0 +1,12 @@
+#---funciones strings---#
+import lineDesignC
+import mostrarLista
+import InfoLista
+#---funciones matematicas---#
+import sumar
+import restar
+import multiplicar
+import dividir
+import potenciar 
+import calculadora
+import calculadoraAir
