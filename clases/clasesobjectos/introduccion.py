@@ -56,14 +56,18 @@ class Ingeniero(Humano):
 
     def solucionarProblemas(self, problema):
         print(f"Hola soy un ingeniero y me llamo {self.nombre} y procedo a solucionar el problema {problema}")
+
 class Programador (Humano):
     def crearAlgoritmo(self, algoritmo):
         print(f"Hola soy {self.nombre} y procedo a resolver el algoritmo {algoritmo}")
 
 class Biomedico(Ingeniero, Programador):
     def mantenimientoEquiposMedicos(self, nombreEquipo):
-        print(f"Hola soy {self.nombre} y estoy representando a {nombreCliente}")
+        print(f"Hola soy {self.nombre} y procedo a arreglar el {nombreEquipo} ")
 
+class Abogado(Humano):
+    def leventarAccionDeTutela(self, nombreCliente):
+        print(f"Hola soy {self.nombre} y estoy representando a {nombreCliente}")
 
 
 # humano1 = Humano("Daniel",27, 1.67)
@@ -86,7 +90,7 @@ class Biomedico(Ingeniero, Programador):
 
 # abogado1 = Abogado("Stiven", 34, 1.94)
 # abogado1.mostrarAtributos()
-# abogado1.levantarAccionDeTutela(biomedico1.nombre)
+# abogado1.leventarAccionDeTutela(biomedico1.nombre)
 # biomedico1.crearAlgoritmo("Fibonacci")
 # biomedico1.solucionarProblemas("Ocupacion alta de UCIs")
-# print(biomedica1.area)
+# print(biomedico1.area)
