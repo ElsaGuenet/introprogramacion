@@ -28,3 +28,15 @@ plt.title("Uso de lenguajes de programacion en el 2021")
 plt.savefig("torasLenguaje3.png")
 #####
 plt.show()
+acumulador = 0
+for elemento in sizes:
+    acumulador += elemento
+
+for i in range(len(pielabels)):
+    pielabels[i] += "->" + str(sizes[i]/acumulador*100) + "%"
+plt.pie(sizes, labels=pielabels, explode=pieexplode, shadow = True, startangle=45)
+#####
+plt.title("Uso de lenguajes de programacion en el 2021")
+plt.savefig("torasLenguaje4.png")
+#####
+plt.show()
