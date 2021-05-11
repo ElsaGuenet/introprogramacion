@@ -1,15 +1,14 @@
 #----Punto1----#
 import matplotlib.pyplot as plt 
-# entradaSnackFav = []
-# entradaPrecios = []
-# snack = input("Por favor entra tus cinco snacks favoritos: ")
-# precio = float(input("Por favor entra los precios de los cinco snacks: "))
-# for i in range (0,snack):
-#     elemento= input()
-#     entradaSnackFav.append(elemento)
-# for i in range (0, precio):
-#     elemento= float(input())
-#     entradaPrecios.append(elemento)
+
+# diccionario = {} 
+# for i in range(0,5):
+# 	print("entrega el nombre de un snack: ")
+# 	entradaSnackFav = input()
+# 	print("entrega el percio de este snack: ")
+# 	entradaPrecios = input()
+# 	diccionario[entradaSnackFav] = float(entradaPrecios)
+# print (diccionario)
 
 entradaSnackFav = ["mars","tobleron", "lion", "maltesers", "milka"]
 entradaPrecios = [2, 2.5, 1.6, 2.5, 1.9]
