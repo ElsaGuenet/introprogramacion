@@ -104,7 +104,28 @@ class Artista (Usuario):
         el numero de cancion publicadas es {self.numero}
         este artista tiene un total de {self.albums} albums
         """)
-artista1 = Artista()
+artista1 = Artista("Elsa Guenet", 22, "femenino", 'francesa', "Reggeaton",50,5,"Medellin")
+artista1.atributos()
+print("*"*50)
+
+#----Punto 3----#
+class Favoritos (Pagina): 
+    def __init__(self, entradaContenido, entradaFormato, entradaFecha, entradaFavoritos, entradaFechaActualizacion):
+        Pagina.__init__(self, entradaContenido, entradaFormato, entradaFecha)
+        self.favorito = entradaFavoritos
+        self.fechaActualizacion = entradaFechaActualizacion
+    def cancionNueva (self, cancion, actualizacion):
+        self.favorito.append(cancion)
+        self.fechaActualizacion = actualizacion
+    def eliminarElemento (self, cancionEliminada):
+        print(self.favorito)
+        self.favorito.pop(cancionEliminada)
+favoritas1 = ["bichota","tusa","DVD","fiel","makinon"]
+spotify1 = Favoritos ("cancion","mp3","octubre 2006", favoritas1, 2021)
+spotify1.eliminarElemento(4)
+spotify1.cancionNueva("leyendas", 2021)
+print(spotify1.favorito)
+
 
 
 
