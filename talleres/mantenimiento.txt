@@ -1,0 +1,2 @@
+Archivo de datos de estudiantes
+Description: sdnombre técnico:sdprecio acordado:1.64
