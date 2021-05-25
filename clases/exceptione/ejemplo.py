@@ -24,15 +24,16 @@ print(nombre.isalpha()) #es ce que c'est des lettres ou non ?
 assert (nombre.isalpha())
 
 isCorrectInfo = False
-while (isCorrectInfo == False)
+while (isCorrectInfo == False):
     try: 
-        edad = int (input("ingrese su edad: "))
+        nombre = input("ingrese su Nombre: ")
+        assert (nombre.isalpha())
         isCorrectInfo = True
-    except ValueError : 
+    except AssertionError : 
         print("ingresaste un dato no valido")
 
 isCorrectInfo = False
-while (isCorrectInfo == False)
+while (isCorrectInfo == False):
     try: 
         edad = int (input("ingrese su edad: "))
         assert (edad >= 18)
@@ -44,6 +45,6 @@ while (isCorrectInfo == False)
 
 listas = [2, 43, 42, 5]
 try:
-    listas [5]
+    listas [4]
 except:
     print("El indice es mayor al tamano de la lista")
