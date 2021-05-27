@@ -1,0 +1,4 @@
+Archivo para el manejo de los clientes
+Description:  nombre paciente: Elsaenfermedad del paciente: resfriado precio consulta: 23.0
+nombre paciente:Damien enfermedad del paciente: enfriada precio consulta: 23.0
+nombre paciente:Fabien enfermedad del paciente: Rhume precio consulta: 23.0
